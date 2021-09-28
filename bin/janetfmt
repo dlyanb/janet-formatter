@@ -1,0 +1,7 @@
+#!/usr/bin/env janet
+
+(use spork)
+
+(defn main [script &opt input]
+  (default input (file/read stdin :all))
+  (prin (fmt/format input)))
