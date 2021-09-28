@@ -1,8 +1,10 @@
 {
   "name": "janet-formatter",
+  "publisher": "dlyanb",
+  "repository": "https://github.com/dlyanb/janet-formatter",
   "displayName": "Janet Formatter",
   "description": "A formatter for Janet source files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.60.0"
   },
