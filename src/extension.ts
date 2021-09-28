@@ -21,7 +21,7 @@ class JanetFormatProvider implements vscode.DocumentFormattingEditProvider {
 
   janetIsInstalled(): boolean {
     const cmd = spawn('which', ['janet']);
-    return cmd.exitCode === 0;
+    return cmd.exitCode === null || cmd.exitCode === 0;
   }
 
   provideDocumentFormattingEdits(
